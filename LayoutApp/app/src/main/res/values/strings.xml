@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LayoutApp</string>
+    <string name="bem_vindo">Bem vindo</string>
+    <string name="click_aqui">Click aqui</string>
+</resources>
