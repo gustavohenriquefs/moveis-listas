@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProfileApp</string>
+    <string name="profile_image">profile image</string>
+    <string name="gustavo_henrique">Gustavo Henrique</string>
+    <string name="software_engineer">Software Engineer</string>
+    <string name="focada_em_desenvolvimento_web">Focada em desenvolvimento Web</string>
+</resources>
