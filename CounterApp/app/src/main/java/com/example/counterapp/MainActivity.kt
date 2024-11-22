@@ -45,7 +45,7 @@ fun CounterApp() {
     var input by remember { mutableStateOf("") }
 
     Column(
-        horizontalAlignment = Alignment.CenterHorizontally,
+        horizontalAlignment = Alignment.Start,
         verticalArrangement = Center,
         modifier = Modifier
             .fillMaxSize()
