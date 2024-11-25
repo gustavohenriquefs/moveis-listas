@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.layout.Arrangement.Center
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -62,6 +63,12 @@ fun CounterApp() {
             value = input,
             onValueChange = { input = it },
             label = { Text("Digite um número") },
+            shape =  RoundedCornerShape(
+                topStart = 16.dp,
+                topEnd = 16.dp,
+                bottomStart = 0.dp,
+                bottomEnd = 0.dp
+            ),
             modifier = Modifier.fillMaxWidth()
         )
 
@@ -76,20 +83,32 @@ fun CounterApp() {
                     result += input.toDoubleOrNull() ?: 0.0
                     input = ""
                 },
+                shape =  RoundedCornerShape(
+                    topStart = 0.dp,
+                    topEnd = 0.dp,
+                    bottomStart = 0.dp,
+                    bottomEnd = 0.dp
+                ),
                 modifier = Modifier.weight(1f)
             ) {
                 Text("Incrementar")
             }
-
             Button(
                 onClick = {
                     result -= input.toDoubleOrNull() ?: 0.0
                     input = ""
                 },
+                shape =  RoundedCornerShape(
+                    topStart = 0.dp,
+                    topEnd = 0.dp,
+                    bottomStart = 0.dp,
+                    bottomEnd = 0.dp
+                ),
                 modifier = Modifier.weight(1f)
             ) {
                 Text("Decrementar")
             }
+
         }
 
         Row(
@@ -103,6 +122,12 @@ fun CounterApp() {
                     result *= input.toDoubleOrNull() ?: 1.0
                     input = ""
                 },
+                shape =  RoundedCornerShape(
+                    topStart = 0.dp,
+                    topEnd = 0.dp,
+                    bottomStart = 0.dp,
+                    bottomEnd = 0.dp
+                ),
                 modifier = Modifier.weight(1f)
             ) {
                 Text("Multiplicar")
@@ -116,6 +141,12 @@ fun CounterApp() {
                     }
                     input = ""
                 },
+                shape =  RoundedCornerShape(
+                    topStart = 0.dp,
+                    topEnd = 0.dp,
+                    bottomStart = 0.dp,
+                    bottomEnd = 0.dp
+                ),
                 modifier = Modifier.weight(1f)
             ) {
                 Text("Dividir")
@@ -127,6 +158,13 @@ fun CounterApp() {
                 result = 0.0
                 input = ""
             },
+
+            shape =  RoundedCornerShape(
+                topStart = 0.dp,
+                topEnd = 0.dp,
+                bottomStart = 16.dp,
+                bottomEnd = 16.dp
+            ),
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("Limpar")
