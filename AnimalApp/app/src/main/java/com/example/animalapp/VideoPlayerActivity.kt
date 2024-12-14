@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -21,7 +20,6 @@ class VideoPlayerActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             val videoRes = intent.getIntExtra("videoRes", R.raw.video_fox)
-
 
             Column (
                 modifier = Modifier.padding(
